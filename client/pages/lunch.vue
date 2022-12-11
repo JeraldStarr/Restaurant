@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-12">
-        <h1>Lunch</h1>
+        <PageTitle page_title="Lunch"/>
         <p>
             .....
         </p>
