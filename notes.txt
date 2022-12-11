@@ -1,0 +1,6 @@
+bootstrap - https://getbootstrap.com/docs/5.1/customize/sass/
+repo - https://github.com/JeraldStarr/Restaurant
+nuxt - https://nuxtjs.org/docs/directory-structure/assets/
+project - https://www.youtube.com/watch?v=sH5ihNyJleQ&list=PLGfApTBz7W6L8chTJh2cyYz--N1BF8ipc&index=2
+wzorcowy projekt - https://github.com/sg1asgard/dorellia
+
