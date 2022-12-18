@@ -51,7 +51,7 @@ export default {
     .dot {
       display: inline-block;
       color: goldenrod;
-      font-size: 10px;
+      font-size: 8px;
       margin-right: 20px;
       margin-left: 20px;
     }
