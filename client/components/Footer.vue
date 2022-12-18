@@ -22,10 +22,10 @@ export default {
 
 <style lang="scss">
 .footer {
-  margin-bottom: 72px;
+  margin: 72px auto;
     .logo {
         img {
-            max-height: 45px
+            width: 150px;
         }
     }
   &__menu {
