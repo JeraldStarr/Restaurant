@@ -21,13 +21,13 @@ export default {
 <style lang="scss">
   .top-menu {
     margin: 42px;
-    .goldenline {
+    .golden-lines {
       border-bottom: 1px solid goldenrod;
       &::after {
         display: block;
         content: "";
         height: 1px;
-        width: 83%;
+        width: 100%;
         background-color: goldenrod;
         position: relative;
         top: 8px;
@@ -42,10 +42,10 @@ export default {
       text-decoration: none;
       border-bottom: 1px solid transparent;
       &.nuxt-link-exact-active {
-        @extend .goldenline;
+        @extend .golden-lines;
       }
       &:hover {
-        border-bottom: 1px solid goldenrod;
+        @extend .golden-lines;
       }
     }
     .dot {
