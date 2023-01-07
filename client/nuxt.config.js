@@ -31,7 +31,18 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: [
+    '@nuxtjs/style-resources',
+  ],
+
+  styleResources: {
+    // your settings here
+    sass: [],
+    scss: [
+
+    ],
+    hoistUseStatements: true  // Hoists the "@use" imports. Applies only to "sass", "scss" and "less". Default: false.
+   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
