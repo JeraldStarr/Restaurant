@@ -48,7 +48,16 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/strapi',
   ],
+
+  strapi: {
+    // Options
+    url: process.env.STRAPI_URL || 'http://localhost:1337/api',
+    entities: ['menu-combos', 'menu-items'],
+    key: 'restarant',
+    // b6ea608d03148f8e0dcd0f7bc544094f9e922d9727f1292c889e3a732ffa08eac963b495ad1d98009f8d49e3199333edec63ccad33ced1e89216729adaaf0e00c727b51536b745fff3841187fe1ba92bd76a65a99995cb507685828e115a3e28427e64c7fa7c707df170b244d2c357697053b2443a5bf755ea2857a81c0570c0
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

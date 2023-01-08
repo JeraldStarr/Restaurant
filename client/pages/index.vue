@@ -2,15 +2,36 @@
   <div class="row">
     <div class="col-12">
       <PageTitle page_title="Starters"/>
-      <p>
-        ....
-      </p>
+        <div>
+          <pre>
+            {{ menu }}
+          </pre>
+        </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  layout: 'homepage',
+  name: 'starters',
+  data() {
+    return {
+      menu: [],
+    }
+  },
+  created() {
+    this.getMenu();
+  },
+  methods: {
+    async getMenu() {
+      try {
+        const results = await fetch('http://localhost:1337/api/menu-combos').then(res => res.json());
+        this.menu = results;
+      } catch(error) {
+        console.error('something went wrong ', error);
+      }
+    }
+  }
 }
 </script>

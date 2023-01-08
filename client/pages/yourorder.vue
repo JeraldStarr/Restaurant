@@ -12,7 +12,7 @@
 <script>
 export default {
     layout: 'homepage',
-    name: 'your order'
+    name: 'yourOrder'
 
 }
 </script>
