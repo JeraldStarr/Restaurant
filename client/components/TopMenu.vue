@@ -44,8 +44,14 @@ export default {
       &.nuxt-link-exact-active {
         @extend .golden-lines;
       }
-      &:hover {
+      &:hover:not(.nuxt-link-exact-active) {
         @extend .golden-lines;
+        position: relative;
+        top: 1px;
+        i {
+          position: relative;
+          bottom: 1px;
+      }
       }
     }
     .dot {
